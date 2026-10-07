@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Андрей Клюбин — Интерфейсный дизайнер</title>
+    <style>
+        /* Общие настройки страницы */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        /* Центральный блок с контентом */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        /* Главный заголовок */
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        /* Подзаголовок с профессией */
+        h2 {
+            font-size: 1.5em;
+            color: #7f8c8d;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        
+        /* Основной текст */
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        /* Блок с контактами */
+        .contact {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        .contact p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        
+        /* Ссылки и кнопки */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        /* Анимация ожидания */
+        .waiting {
+            font-size: 1.1em;
+            color: #95a5a6;
+            font-style: italic;
+        }
+        
+        .dots span {
+            animation: blink 1.5s infinite;
+        }
+        
+        .dots span:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        
+        .dots span:nth-child(3) {
+            animation-delay: 1s;
+        }
+        
+        @keyframes blink {
+            0%, 20%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+        
+        /* Адаптивность для мобильных */
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.3em; }
+            p { font-size: 1.1em; }
+            .btn { padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Андрей Клюбин</h1>
+        <h2>Интерфейсный дизайнер</h2>
+        
+        <p>Молчи. Смотри. Жди.</p>
+        
+        <p class="waiting">Я уже в пути. 
+            <span class="dots"><span>.</span><span>.</span><span>.</span></span>
+        </p>
+        
+        <p>Скоро здесь появится что-то настоящее. 
+        Новый визуальный язык, чистые интерфейсы и немного цифровой магии. 
+        Я проектирую то, чем людям нравится пользоваться.</p>
+        
+        <div class="contact">
+            <p>📍 Пока нахожусь в процессе создания</p>
+            <p>📧 Для связи: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>🐦 Telegram: <a href="https://t.me/your_nickname">@your_nickname</a></p>
+        </div>
+        
+        <a href="#" class="btn">Ждать вместе</a>
+    </div>
+
+</body>
+</html>
